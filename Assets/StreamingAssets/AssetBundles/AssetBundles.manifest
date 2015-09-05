@@ -1,0 +1,13 @@
+ManifestFileVersion: 0
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: arts
+      Dependencies:
+        Dependency_0: tex
+    Info_1:
+      Name: icon
+      Dependencies: {}
+    Info_2:
+      Name: tex
+      Dependencies: {}

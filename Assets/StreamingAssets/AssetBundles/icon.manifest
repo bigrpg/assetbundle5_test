@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 4287903382
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 59cf360e846c4aadba97019944c9cf6f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0fd99c5e9ad8f0f80da6ba03142e9c82
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Arts/Icon/app/Icon96.png
+- Assets/Arts/Icon/app/Icon120.png
+- Assets/Arts/Icon/white.png
+- Assets/Arts/Icon/app/Icon256.png
+- Assets/Arts/Icon/app/192.png
+- Assets/Arts/Icon/app/Icon114.png
+- Assets/Arts/Icon/app/36.png
+- Assets/Arts/Icon/app/Icon29.png
+- Assets/Arts/Icon/app/48.png
+- Assets/Arts/Icon/app/Icon36.png
+- Assets/Arts/Icon/app/Icon144.png
+- Assets/Arts/Icon/app/Icon58.png
+- Assets/Arts/Icon/app/Icon50.png
+- Assets/Arts/Icon/app/Icon152.png
+- Assets/Arts/Icon/app/Icon76.png
+- Assets/Arts/Icon/app/Icon48.png
+- Assets/Arts/Icon/app/144.png
+- Assets/Arts/Icon/app/Icon32.png
+- Assets/Arts/Icon/app/96.png
+- Assets/Arts/Icon/app/Icon72.png
+- Assets/Arts/Icon/app/Icon57.png
+- Assets/Arts/Icon/app/Icon100.png
+- Assets/Arts/Icon/app/72.png
+Dependencies: []
