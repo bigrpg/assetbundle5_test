@@ -3,11 +3,7 @@ AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: arts
-      Dependencies:
-        Dependency_0: tex
+      Dependencies: {}
     Info_1:
       Name: icon
-      Dependencies: {}
-    Info_2:
-      Name: tex
       Dependencies: {}

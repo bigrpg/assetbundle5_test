@@ -51,8 +51,9 @@ public class Main : MonoBehaviour {
                 {
                     WWW awww = WWW.LoadFromCacheOrDownload(resname + "arts", mainfest.GetAssetBundleHash("arts"));
                     yield return awww;
-                   Instantiate(awww.assetBundle.LoadAsset("New Prefab"));
+                   UnityEngine.Object assetObj = awww.assetBundle.LoadAsset("New Prefab");
                    awww.assetBundle.Unload(false);
+                   UnityEngine.Object obj2 = Instantiate(assetObj);
 
                 }
                 for (int i = 0; i < abs.Length; ++i)
