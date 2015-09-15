@@ -18,6 +18,11 @@ public class Main : MonoBehaviour {
         Debug.Log(Application.streamingAssetsPath);
 
         StartCoroutine(DownloadAndCache());
+
+        GameObject eventSystem = new GameObject("EventSystem");
+        eventSystem.AddComponent<EventSystem>();
+        eventSystem.AddComponent<TouchInputModule>();
+        eventSystem.AddComponent<StandaloneInputModule>();
 	}
 
     void setTrigers()
@@ -95,20 +100,17 @@ public class Main : MonoBehaviour {
                     WWW awww = WWW.LoadFromCacheOrDownload(resname + "prefab", mainfest.GetAssetBundleHash("prefab"));
                     yield return awww;
                     UnityEngine.Object assetObj = awww.assetBundle.LoadAsset("gui1.prefab");
-                   awww.assetBundle.Unload(false);
-                   UnityEngine.GameObject obj2 = Instantiate(assetObj) as GameObject;
-
-                   obj2.transform.SetParent(GameObject.Find("Canvas").transform, false);
-                   //obj2.transform.localPosition = pos;
-                   //obj2.transform.localRotation = quart;
-                   //obj2.transform.localScale = scale;
-
+                    awww.assetBundle.Unload(false);
+                    UnityEngine.GameObject obj2 = Instantiate(assetObj) as GameObject;
+                    obj2.transform.SetParent(GameObject.Find("Canvas").transform, false);
+                    obj2.transform.SetAsFirstSibling();
                 }
                 for (int i = 0; i < abs.Length; ++i)
                 {
                     abs[i].Unload(false);
                 }
             }
+            Resources.UnloadUnusedAssets();
 
         } // memory is freed from the web stream (www.Dispose() gets called implicitly)
     }
