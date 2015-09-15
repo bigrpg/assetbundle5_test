@@ -82,8 +82,6 @@ public class Main : MonoBehaviour {
             AssetBundleManifest mainfest = bundle.LoadAsset("AssetBundleManifest") as AssetBundleManifest;
             if (mainfest != null)
             {
-                Debug.Log("aaaaaa");
-
                 string[] dps = mainfest.GetAllDependencies("prefab");
                 AssetBundle[] abs = new AssetBundle[dps.Length];
                 for (int i = 0; i < dps.Length; i++)
@@ -99,14 +97,11 @@ public class Main : MonoBehaviour {
                     UnityEngine.Object assetObj = awww.assetBundle.LoadAsset("gui1.prefab");
                    awww.assetBundle.Unload(false);
                    UnityEngine.GameObject obj2 = Instantiate(assetObj) as GameObject;
-                   Vector3 pos = obj2.transform.localPosition;
-                   Vector3 scale = obj2.transform.localScale;
-                   Quaternion quart = obj2.transform.localRotation;
 
-                   obj2.transform.parent = GameObject.Find("Canvas").transform;
-                   obj2.transform.localPosition = pos;
-                   obj2.transform.localRotation = quart;
-                   obj2.transform.localScale = scale;
+                   obj2.transform.SetParent(GameObject.Find("Canvas").transform, false);
+                   //obj2.transform.localPosition = pos;
+                   //obj2.transform.localRotation = quart;
+                   //obj2.transform.localScale = scale;
 
                 }
                 for (int i = 0; i < abs.Length; ++i)
