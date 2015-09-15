@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 962770406
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f65cb495219a09f37404db03185597c7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 75957c18d05791510cbdd301a328d69f
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Tex/bushezhe.tga
+Dependencies: []

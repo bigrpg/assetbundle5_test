@@ -2,8 +2,9 @@ ManifestFileVersion: 0
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: arts
-      Dependencies: {}
+      Name: prefab
+      Dependencies:
+        Dependency_0: tex_gui1
     Info_1:
-      Name: icon
+      Name: tex_gui1
       Dependencies: {}

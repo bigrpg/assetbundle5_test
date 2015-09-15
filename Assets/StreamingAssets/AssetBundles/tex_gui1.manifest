@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 2303687116
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 438c50cec5816e85d4a6652c58b7b1ac
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 00ffc586b3c4c12c72c7fed589b81235
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Tex/gui1/CardList01.png
+- Assets/Tex/gui1/CardList02.png
+Dependencies: []
